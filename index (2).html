@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="UTF-8">
+        <title>Environmental pollution</title>
+        <style>
+            .header{
+                margin: -8px;
+                color: white;
+                background-color: #165d75; 
+                text-align: right;
+                padding-right: 700px;
+                font-size: 20px;
+                font-weight: 800;
+                padding-left: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                position: sticky;
+                top: 0;
+            }
+            .items{
+                text-transform: uppercase;
+                border-radius: 5px;
+                margin-left: 30px;
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+            }
+            .items-11{
+                text-transform: uppercase;
+                border-radius: 5px;
+                margin-right: 300px;
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+            }
+            .items:hover{
+                cursor: pointer;
+                background-color: #124c60;
+                border: white;
+                border-bottom: solid 4px;
+                border-right: solid 2px;
+            }
+            .item:active{
+                color: cornsilk;
+            }
+            .main-environmental-pollution{
+                margin-top: 10px;
+                margin-left: -10px;
+                margin-right: -10px;
+                background-color: #f0f1f1;
+            }
+            .solution{
+                margin-left: -10px;
+                margin-right: -10px;
+                background-color: #f0f1f1;
+            }
+            .main-causes{
+                margin-left: -10px;
+                margin-right: -10px;
+                background-color: #f0f1f1;}
+            .aside{
+                margin-top: 20px;
+                margin-left: 100px;
+                margin-bottom: 20px;
+                width: 70%;
+                padding: 10px;
+                display: inline-block;
+                background-color: #fffde5;
+                font-size: larger;
+                font-weight: 800;
+                border-radius: 8px;
+                border-left: 5px solid black;
+                border-bottom: 5px solid black;
+            }
+            .aside-1{
+                margin-left: 100px;
+                margin-bottom: 20px;
+                margin-bottom: 10px;
+                width: 70%;
+                padding: 10px;
+                display: inline-block;
+                background-color: #fffde5;
+                font-size: larger;
+                font-weight: 800;
+                border-radius: 8px;
+                border-left: 5px solid black;
+                border-bottom: 5px solid black;
+                }
+            .section{
+                margin-top: 20px;
+                margin-left: 50px;
+                margin-bottom: 10px;
+                padding: 10px;
+                width: 20%;
+                display: inline-block;
+                background-color: #fffde5;
+                border-radius: 8px;
+                border-right: 5px solid black;
+                border-bottom: 5px solid black;
+            }
+            .title-1{
+                text-decoration: underline ;
+                text-transform: capitalize;
+                font-size: xx-large;
+                font-weight: 800;
+                color:rgb(102, 2, 2);
+            }
+            .contacts{
+                background-color: #165d75; 
+                margin-left: -8px;
+                margin-right: -8px;
+                margin-top: -5px;
+                padding:50px;
+                color: white;
+            }
+            .footer{
+                border-left: solid;
+                padding: 15px;
+                font-size: 20px;
+            }
+            .facebook{
+                font-size: 20px;
+            }
+            .facebook:hover{
+                font-size: 21px;
+                background-color: #124c60;
+                border-radius:8px;
+            }
+            .p-in-cau{
+                line-height: 20px;
+            }
+            .pa{
+                font-size: 25px;
+                text-decoration: underline;
+            }
+            .feed-back{
+            background-color: #f0f1f1;
+            margin-left: -10px;
+            margin-right: -10px;
+            }
+            
+            body {
+            font-family: "Montserrat";
+            counter-increment: 'counter'
+        }
+
+        .section-1 {
+            height: 100vh;
+            width: 100%;
+            background-color: #f0f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0px 0px 20px #00000010;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 5px;
+                font-size: 18px;
+                border: 1px solid rgba(128, 128, 128, 0.199);
+                margin-top: 5px;
+            }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 20px;
+            font-size: 24px;
+            border-radius: 8px;
+            font-family: "Montserrat";
+            color: rgb(27, 166, 247);
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s ease background-color;
+        }
+
+            button[type="submit"]:hover {
+                background-color: rgb(214, 226, 236);
+            }
+
+        #status {
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+            #status.success {
+                background-color: rgb(211, 250, 153);
+                animation: status 4s ease forwards;
+            }
+
+            #status.error {
+                background-color: rgb(250, 129, 92);
+                color: white;
+                animation: status 4s ease forwards;
+            }
+
+            .main_container {
+  height: 46px;
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  max-width: 300px;
+  background-color: #555555;
+  align-content: center;
+}
+.container_inner {
+  height: auto;
+  border: none;
+  background-color: #555555;
+  max-width: 290px;
+  vertical-align: center;
+  padding-top: 12px;
+  padding-left: 10px;
+  align-content: center;
+}
+ .num_tiles {
+  width:30px;
+  height: 30px;
+  background-color: #888888;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  line-height: 20px;
+  padding: 3px;
+  margin: 1.5px;
+  font-family: verdana;
+  vertical-align: center;
+}
+
+        @keyframes status {
+            0% {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            90% {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+        </style>
+    </head>
+    <body style="background-color: #f0f1f1 ;">
+        <header class="header">
+            <span ><a class="items-11">nyc</a></span>
+            <span ><a class="items" href="#environmental pollution">biodiversity</a></span>
+            <span ><a class="items" href="#solution">its solution</a></span>
+            <span ><a class="items"href="#feedback">feedback</a></span>
+            <span ><a class="items"href="#contacts">contacts</a></span>
+        </header>
+        <main class="main-environmental-pollution">
+            <aside class="aside" > <span class="title-1" id="environmental pollution">Biodiversity</span>
+               <p> also called biological diversity, the change of life found during a very place on Earth or, often, the entire sort of life on Earth. a typical quantity of this variety, called species richness, is that the count of species in an exceeding neighborhood. Such numbers capture a variety of the variances between places—the tropics, for example, have more biodiversity than temperate areas—but raw species count is not the sole measure of diversity. Furthermore, biodiversity includes the genetic variety within each species and thus the variability of ecosystems that species create.</p>
+            <p>Biodiversity is dangerous for maintaining ecosystem health. Declining biodiversity lowers an ecosystem’s production (the amount of food energy that's transformed into biomass) and lowers the quality of the ecosystem’s services.
+                Dealing with biodiversity loss is tied to the conservation challenges posed by the underlying drivers.</p>
+            <p> Conservation biologists note that these problems could have solved by employing a mix of public policy and economic solutions supported by continued monitoring and education. Governments, non-governmental organizations, and also the scientific community must work together to make motivations to conserve natural habitats and protect the species within them from unnecessary harvesting, while disincentivizing behaviors that contribute to habitat loss and deprivation.</p>
+        <p> Biodiversity loss, also called loss of biodiversity, a decrease in biodiversity within a species, an ecosystem, a given nation-state, or Earth as a whole. Biodiversity, or biological diversity, maybe a term that refers to the number of genes, species, individual organisms within a given species, and biological communities within a defined region, ranging from the smallest ecosystem to the worldwide biosphere. (A biological community is an interacting group of assorted species during a standard location.) Likewise, biodiversity loss describes the decline within the quantity, genetic variability, and sort of species,
+             and thus the biological communities in a very very given area. This loss within the shape of life may end up during a breakdown within the functioning of the ecosystem where decline went on.Many individuals don't consider the damage they're causing on biodiversity. However, it's important as humans to comprehend the impact we've on biodiversity because without it, there would be no human existence. If no changes are made within the ways humans use resources on earth, there'll still be a degradation of biodiversity until human lives can not be sustained. Humans affect biodiversity by their population numbers, use of land
+             , and their lifestyles, causing damage to habitats for species. it's important for humans to comprehend how their actions affect biodiversity and also the importance of maintaining what biodiversity is left on the world. Through proper education, and by demanding that governments make decisions to preserve biodiversity, the human population are going to be ready to sustain life on earth longer.</p></aside>
+            <section class="section"><img src="168299208_472145900894194_2916108902783894664_n.png" height="450px" width="510px"></section>
+        </main>
+        <main class="main-causes">
+            <aside class="aside-1"> <span class="title-1">Causes of biodiversity loss:</span>
+<p class="p-in-cau">306 isn’t a negligible or a trivial number of species that were added to the red list by IUCN (The international union for the conservation of Nature). </p>
+<p class="p-in-cau"> there were a lot of reasons that cause the biodiversity loss which makes this huge number of red-listed species and makes 1,556 endangered ones.</p>
+<p class="p-in-cau"> <span class="pa"> loss and fragmentation:</span> 
+Habitat loss is meaning that the change of the place that this species of animals used to live and has its adaptation with this environment which is caused by several reasons like deforestation, fire, and over-use, and also urbanization.</p>
+<p class="p-in-cau"> <span class="pa">The pollution:</span>
+Some of the fertilizers and pesticides come from the south of Egypt by the Nile river which carries it from Ethiopia and Sudan etc., ends in the Mediterranean Sea. All of this does not make any danger to the aqueous species? Of course, they do. And also, they cause a lot of death in the vegetarian species like cows or bulls which eating from the soil which already gain these toxic substances from the soils.</p>
+<p class="p-in-cau"> <span class="pa">Global Climate change:</span>
+Climatologists think and provide a new question. What will the temperature be in 2030? They found a dangerous answer which being in that “the temperature in 2030 will increase about 2 is that easy to know? Does it mean that the sea water level will rise by around 30 to 50 cm? is that easy to imagine? Unquestionably it hard to adapt to this increase. Not for the human being only it also for some species which will suffer from this increase.</p></aside>
+<section class="section"><img src="168668371_1180797269058251_5949943751952574680_n.png" height="310px" width="510px"></section>
+        </main>
+        <main class="main-causes">
+            <aside class="aside-1"> <span class="title-1">impacts of biodiversity loss:</span>
+                <p> <span class="pa">Unbalancing the species: </span>
+                    Some species depends on the others and consider it as a source of food which advance the balancing of biological life. Biodiversity loss make some of unbalancing biological life as endangering some of species cause increasing of some other species.</p>
+                    <p> <span class="pa"> threat to human beings:</span> 
+Biodiversity loss endangers human well-being by affecting soil and water, which are fundamental to food production.</p>
+
+<p> <span class="pa"> Proliferation of pests: </span>
+For example, imbalances in ecosystems can lead to the emergence of pests that damage crops.</p>
+
+<p> <span class="pa">Increase in CO2 emissions: </span>
+The capacity of forests and oceans to absorb CO2 decreases if their ecosystems are adversely affected.</p>
+<p> <span class="pa"> Complementarity:</span> Plant species coexistence is believed to be the results of niche partitioning, or differences in resource requirements among species. By complementarity, a more diverse plant community should be ready to use resources more completely, and thus be more productive. Also called niche differentiation, this mechanism could be a central principle within the functional group approach, which breaks species diversity down into functional components.
+<p> <span class="pa"> Facilitation:</span> Facilitation could be a mechanism whereby certain species help or allow other species to grow by modifying the environment during a way that's favorable to a co-occurring species.Plants can interact through an intermediary like nitrogen, water, temperature, space, or interactions with weeds or herbivores among others. Some samples of facilitation include large desert perennials acting as nurse plants, aiding the establishment of young neighbors of other species by alleviating water and temperature stress, and nutrient enrichment by nitrogen-fixers like legumes.</p>
+<P> <span class="pa">The Sampling Effect: </span> The sampling effect of diversity will be thought of as having a greater chance of including a species of greatest inherent productivity in an exceedingly plot that's more diverse. This provides for a composition effect on productivity, instead of diversity being an immediate cause. However, the sampling effect may of course be a compilation of various effects. The sampling effect are often separated into the greater likelihood of choosing a species that's 1) adapted well to particular site conditions, or 2) of a greater inherent productivity. Additionally, one can augment the sampling effect a greater likelihood of including 3) a pair of species that highly complement one another, or 4) a specific species with an outsized facilitative effect on other members of the community</P></p>
+</aside>
+<section class="section"><img src="168062339_206226047944481_1850802150803828181_n.png" height="500px" width="510px"></section>
+        </main>
+
+
+        <main class="solution">
+            <aside class="aside" > <span class="title-1" id="solution">solution of bio diversity </span>
+               <p> to solve the biodiveristy problem :</p>
+            <p>governments should penalize attempts which threaten a loss in biodiveristy,
+                  also people in schools should be educated about the importance of biodiveristy for the earth.</p><p> also rare species should be protected against hunters or any quite behaviour that threatens wiping them out, because plenty of species are already endangered. animals are commonly killed for human unteres, for eample crocodiles are killed to form bags and shoes.
+                   the natural habitats that the animals and plants reside in should be protected by strict rules. also rules that prevent over hunting and over fishing should be applied, because the animals population number is decreasing at a high rate.</p> since the foremost cause for biodiveristy loss is over consumption, awarness should be raised to consume less. also livestock grazing should be managed, wetland should be maintained by conserving water ang global envirmontal intiatives should be funded.
+                    governemnts should aim to increase maintence on protected areas for endangered animals or plants to live in, which should simulate their natural habitat, and giving them a healthy enviroment for mating and growing the population number again. we should Engage a various range of communities and institutions in socially just and effective biodiversity conservation.
+                     Develop and support the implementation of equitable and effective policies, business models and governance systems to spice up restoration and conservation of biodiversity.</aside>
+            <section class="section"><img src="as.png" height="300px" width="510px"></section>
+        </main>
+
+
+        <p style="text-align: center;
+         background-color: rgba(66, 66, 66, 0.596) ;
+         margin-top:100px; 
+         margin-left: -10px;
+         margin-right: -10px;
+         text-transform: capitalize;
+         font-size: 40px;
+         text-shadow: whitesmoke 5px;
+         background-color: #f0f1f1;"> feedback </p>
+
+
+<body onload="incrementCount(10)">
+  <div class="main_container" id="id_main_container">
+    <div class="container_inner" id="display_div_id">
+    </div>
+  </div>
+
+        <main class="feed-back" id="feedback" >
+                   
+            <section class="section-1">
+                <div class="container">
+                    <form action="https://formspree.io/f/mdoyoake" method="post" id="my-form">
+        
+                        <div class="form-group">
+                            <label for="firstName"> First Name</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="feedback">feedback</label>
+                            <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                        </div>
+        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="status"></div>
+            </section>
+
+                    </main>
+
+
+                    <script>
+
+var counter_list = [10,10000,10000];
+  var str_counter_0 = counter_list[0];
+  var str_counter_1 = counter_list[1];
+  var str_counter_2 = counter_list[2];
+  var display_str = "";
+  var display_div = document.getElementById("display_div_id");
+
+  function incrementCount(current_count){
+    setInterval(function(){
+      // clear count
+      while (display_div.hasChildNodes()) {
+          display_div.removeChild(display_div.lastChild);
+      }
+      str_counter_0++;
+      if (str_counter_0 > 99) {
+        str_counter_0 = 10; // reset count
+        str_counter_1++;    // increase next count
+      }
+      if(str_counter_1>99999){
+        str_counter_2++;
+      }
+      display_str = str_counter_2.toString() + str_counter_1.toString() + str_counter_0.toString();
+      for (var i = 0; i < display_str.length; i++) {
+        var new_span = document.createElement('span');
+        new_span.className = 'num_tiles';
+        new_span.innerText = display_str[i];
+        display_div.appendChild(new_span);
+      }
+    },1000);
+  }
+
+                        window.addEventListener("DOMContentLoaded", function () {
+                
+                
+                            var form = document.getElementById("my-form");
+                
+                            var status = document.getElementById("status");
+                
+                
+                
+                            function success() {
+                                form.reset();
+                                status.classList.add("success");
+                                status.innerHTML = "Thanks!";
+                            }
+                
+                            function error() {
+                                status.classList.add("error");
+                                status.innerHTML = "Oops! There was a problem.";
+                            }
+                
+                
+                
+                            form.addEventListener("submit", function (ev) {
+                                ev.preventDefault();
+                                var data = new FormData(form);
+                                ajax(form.method, form.action, data, success, error);
+                            });
+                        });
+                
+                        function ajax(method, url, data, success, error) {
+                            var xhr = new XMLHttpRequest();
+                            xhr.open(method, url);
+                            xhr.setRequestHeader("Accept", "application/json");
+                            xhr.onreadystatechange = function () {
+                                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                                if (xhr.status === 200) {
+                                    success(xhr.response, xhr.responseType);
+                                } else {
+                                    error(xhr.status, xhr.response, xhr.responseType);
+                                }
+                            };
+                            xhr.send(data);
+                        }
+                    </script>
+
+    
+
+  <img class="card-img-top" src="download.jfif" alt="Card image cap" style="width: 33%; display: inline; height: 500px; border: 2px black solid; margin-bottom: 40px; ">
+  <img class="card-img-top" src="images.jfif" alt="Card image cap" style="width: 33%; display: inline; height: 500px; border: 2px black solid; margin-bottom: 40px;" >
+  <img class="card-img-top" src="download (1).jfif" alt="Card image cap" style="width: 33%; display: inline; height: 500px; border: 2px black solid; margin-bottom: 40px; ">
+
+        <footer id="contacts" class="contacts"> 
+            <section style="padding-left: 30px; padding-bottom: 30px; font-weight: bold; font-size: xx-large;">contacts</section>
+            <section class="footer">mohamed hazem <span style="padding-left: 50px;"><a style="color: white; text-decoration: underline; " class="facebook" href="https://www.facebook.com/medahazem123456789"> mohamed hazem (facebook)</a></span> <span style="color: white; text-decoration: none; padding-left: 30px;"> phone number: 01121708501 </span> <span style="color: white; text-decoration: none; padding-left: 30px; ">mail:1020057@stemegypt.edu.eg</span></section>
+            <section class="footer">youssef hazem <span style="padding-left: 50px;"><a style="color: white; text-decoration: underline;" class="facebook" href="https://www.facebook.com/yoyoo.moon.9">youssef hazem (facebook)</a></span> <span style="color: white; text-decoration: none; padding-left: 30px;">phone number:01121708489</span>  <span style="color: white; text-decoration: none; padding-left: 30px; ">mail:1020080@stemegypt.edu.eg</span> </section>
+            <section class="footer">mazen ramy <span style="padding-left: 50px;"> <a style="color: white; text-decoration: underline;" class="facebook" href="https://www.facebook.com/trazan.cech">mazen ramy ragab (facebook)</a></span> <span style="color: white; text-decoration: none; padding-left: 30px;"> phone number: 01153369821</span>  <span style="color: white; text-decoration: none; padding-left: 30px; ">mail:1020053@stemegypt.edu.eg</span> </section>
+            <section class="footer">kareem mohamed <span style="padding-left: 50px;"><a style="color: white; text-decoration: underline;" class="facebook" href="https://www.facebook.com/kelsedfy">kareem elsedfy (facebook)</a></span> <span style="color: white; text-decoration: none; padding-left: 30px;">phone number:010950955426 </span>   <span style="color: white; text-decoration: none; padding-left: 30px; ">mail:1020099@stemegypt.edu.eg</span> </section>
+            <section class="footer">youssef ahmed <span style="padding-left: 50px;"><a style="color: white; text-decoration: underline;" class="facebook" href="https://www.facebook.com/profile.php?id=100035656320586">youssef ahmed (facebook)</a></span> <span style="color: white; text-decoration: none; padding-left: 30px;">phone number: 01270048380 </span>  <span style="color: white; text-decoration: none; padding-left: 30px; ">mail:1020074@stemegypt.edu.eg</span> </section>
+    </body>
+</html>
